@@ -9,12 +9,13 @@ Addtional requirements to setup:
 For using snowflake connector kindly follow the steps given in : https://docs.streamlit.io/knowledge-base/tutorials/databases/snowflake
 
 Project folder structure:
-
-Streamlit
-  ->.streamlit
+<pre>
+Streamlit(folder name)
+  ->.streamlit 
     ->secrets.toml
-  ->pages
-    -> data.py
-    -> Other.py
-  ->home.py
-  ->requirements.txt
+  ->pages 
+    -> data.py 
+    -> Other.py 
+  ->home.py 
+  ->requirements.txt 
+</pre>
