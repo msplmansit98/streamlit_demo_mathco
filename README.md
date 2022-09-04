@@ -1,8 +1,8 @@
 # streamlit
 Streamlit app
-The repo only has the home and pages files.
-home.py - main page file
-pages - sub-pages file
+The repo only has the home and pages files. <br>
+home.py - main page file <br>
+pages - sub-pages file <br>
 
 
 Addtional requirements to setup:
