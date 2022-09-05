@@ -3,11 +3,21 @@ import pandas as pd
 import numpy as np
 import snowflake.connector
 from matplotlib import pyplot as plt
+import os
+from dotenv import load_dotenv
 
 
 
 def init_connection():
-    return snowflake.connector.connect(**st.secrets["snowflake"])
+    
+    load_dotenv()
+    return snowflake.connector.connect(user =os.getenv("SNOWFLAKE_USER"),
+                                        password = os.getenv("SNOWFLAKE_PASSWORD"),
+                                        account = os.getenv("SNOWFLAKE_ACCOUNT"),
+                                        warehouse = os.getenv("SNOWFLAKE_WAREHOUSE"),
+                                        database = os.getenv("SNOWFLAKE_DATABASE"),
+                                        schema = os.getenv("SNOWFLAKE_SCHEMA"),
+                                        Account_identifier = os.getenv("SNOWFLAKE_ACCOUNT_IDENTIFIER"))
 
 conn = init_connection()
 

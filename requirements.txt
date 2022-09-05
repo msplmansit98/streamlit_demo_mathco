@@ -20,3 +20,4 @@ typing_extensions==4.3.0
 urllib3==1.26.12
 snowflake-connector-python==2.7.12
 -r https://raw.githubusercontent.com/snowflakedb/snowflake-connector-python/v2.7.12/tested_requirements/requirements_310.reqs
+python-dotenv
