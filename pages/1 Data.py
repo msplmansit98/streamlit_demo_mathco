@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import snowflake.connector
-from home import data_fetcher
+from app import data_fetcher
 
 # def init_connection():
 #     return snowflake.connector.connect(**st.secrets["snowflake"])
